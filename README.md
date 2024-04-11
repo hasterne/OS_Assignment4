@@ -61,7 +61,7 @@ The following table outlines the multiple code variants included in this reposit
 <br>
 1) the c file variant we are currently using <br>
 2) the output file we named in step #3 <br>
-3) The awk file that mentions 3 named variables, in order: the file names from #2, #3, and a unique `out.filename` where the data will be sent.<br>
+3) The [awk file](/mutexruns.awk) that mentions 3 named variables, in order: the file names from #2, #3, and a unique `out.filename` where the data will be sent.<br>
 <br>
 #7 run the command using the new awk file<br>
 #8 check the program making sure to use the `out.filename` that was created earlier<br>
