@@ -26,7 +26,7 @@ The following table outlines the multiple code variants included in this reposit
 | [5Threads1and5Sleep](/5Threads1and5Sleep.c)| sleep(.1) | sleep(.5) | 5 |
 
 ## Helpful Commands
-`awk -f mutexruns.awk &` Executes the awk file, which tests the mutex code up to the designated # of trials: [Default mutexruns.awk from Canvas]
+`awk -f mutexruns.awk &` Executes the awk file, which tests the mutex code up to the designated # of trials: [Default mutexruns.awk from Canvas](/mutexruns.awk)
 
 `grep 1 out.mutex`
 
