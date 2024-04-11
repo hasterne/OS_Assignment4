@@ -12,7 +12,13 @@ int inc(void) {
   if (pthread_mutex_lock(&myptmlock)) printf("ERROR\n");
   currval = count; 
   currval++; 
-  sleep(.1); 
+  
+  //A loop to approximate a sleep of .1 seconds
+  int ctr = 0;
+  for(int i = 0; i<100000; i++){
+    ctr++;
+  }
+  
   count = currval;
   pthread_mutex_unlock(&myptmlock);
   }
@@ -20,7 +26,13 @@ int inc(void) {
 int dec(void) { 
   if (pthread_mutex_lock(&myptmlock)) printf("ERROR\n");
   currval = count;
-  sleep(.2); 
+  
+  //A loop to approximate a sleep of .2 seconds
+  int ctr = 0;
+  for(int i = 0; i<200000; i++){
+    ctr++;
+  }
+  
   currval--; 
   count = currval;
   pthread_mutex_unlock(&myptmlock);
