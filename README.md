@@ -28,13 +28,13 @@ The following table outlines the multiple code variants included in this reposit
 ## Helpful Commands
 `awk -f mutexruns.awk &` Executes the awk file, which tests the mutex code up to the designated # of trials: [Default mutexruns.awk from Canvas](/mutexruns.awk)
 
-`grep 1 out.mutex`
+`grep 1 out.mutex` prints all occurrences of 1 in the data
 
-`grep -n 1 out.mutex`
+`grep -n 1 out.mutex` prints all occurences of 1 including the line (trial) number
 
 `wc out.mutex` The leftmost number gives the number of lines in the output file, AKA the number of trials that have been completed.
 
-`mv out.mutex destination_file`
+`mv out.mutex destination_file` moves the data from the output file to a specified location, e.g. to out.mutex.sleep0.5.run1
 ## Running Instructions
 *Use instructions below for running one file at a time*<br>
 <br>
